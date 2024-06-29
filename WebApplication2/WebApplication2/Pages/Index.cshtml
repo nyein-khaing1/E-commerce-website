@@ -1,0 +1,683 @@
+﻿@page
+
+@model WebApplication2.Pages.IndexModel
+@{
+}
+
+
+    <head>
+        <meta charset = "UTF- 8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty by Victoria</title>
+        <link rel ="stylesheet" href = "style.css">
+    </head>
+    <body>  
+            
+            <!--navbar section-->
+            <nav class = "nav">
+
+                    <header class = "nav_container">
+                        <a href = "#home" id="logo"><img src = "logo2.png" id="logo"></a>
+                        <div class = "nav_toggle" id ="mobile_menu">    
+                        <span class = "bar"></span>   
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                        </div>
+                        <ul class = "menu">
+                        <li class = "nav_item">
+                            <a href = "#home" class = "nav_links" id = "home_page">Home</a>
+
+                        </li>
+                        <li class = "nav_item">
+                            <a href = "#makeup" class = "nav_links" id = "makeup_page">Makeup</a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href = "#skincare" class = "nav_links" id = "skincare_page">Skincare</a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href = "#services" class = "nav_links" id = "services_page">Services</a>
+                        </li>
+                        <li class = "nav_btn">
+                            <a href = "#register" class = "nav_button" id = "register_page">Register</a>
+
+                        </li>
+                        <li class="nav_item">
+                            <a asp-page="basket" class="nav_links" id="basket_page">Basket <span id="basket_count">0</span></a>
+                        </li>
+
+                        </ul>
+                        <div class ="buttonss">
+                            <label class="con">A+
+                                <input type="radio">
+                                <span class="checkmak"></span>
+                            </label>
+                        </div>
+                        <div id="darkMode">
+                        <label class="contain">DarkMode
+                            <input type ="checkbox">
+                            <span class ="checkmark"></span>
+                        </label>
+                    </div>
+
+                    </header>    
+
+            </nav>
+
+
+        <!--first page-->  
+
+
+            <section class ="hero" id = "home">
+                <img src= "est3.jpg" alt ="skincare" class = "est3" >
+
+                <div class ="hero_container"> 
+                        <h1 class = "hero_heading"><b>Take pleasure in your <span>most radiant skin</span></b> </h1>
+                        <p class = "description"><b>The EstÃ©e Lauder Advanced Night Repair Synchronized Multi-Recovery Complex Serum improves your beauty sleep by supplying an increase in moisture that will make you look more radiant as you sleep.</b></p>
+                        <button class = "main_btn"><a href ="#">Explore</a></button>
+                </div>
+            </section>
+
+            <footer class ="footer">
+                <div class= "footer-content">
+                    <div class="footer-section about">
+                    <h2 class ="logo-text">Beauty by Victoria</h2><br>
+
+                        <div class="contact">
+                            <span><i class ="fas fa-user"></i>  &nbsp; Victoria Winter</span>
+                            <span><i class ="fas fa-phone"></i>  &nbsp; +447405181823</span>
+                            <span><i class ="fas fa-envelope"></i> &nbsp; info@beautybyvictoria.com</span><br>
+                        </div>
+                        <div class ="socials">
+                            <a class ="flink" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class ="flink" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class ="flink" href="#"><i class ="fab fa-twitter"></i></a>
+                            <a class ="flink" href="#"><i class ="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section links">
+                        <h2>Quick Links</h2>
+                        <br>
+                        <ul>
+                            <a class ="flink" href="#"><li>Events</li></a>
+                            <a class ="flink" href="#"><li>Team</li></a>
+                            <a class ="flink" href="#"><li>Mentores</li></a>
+                            <a class ="flink" href="#"><li>Terms and conditions</li></a>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class= "footer-bottom">
+                &copy; @DateTime.Now.Year Designed by Victoria Winter
+                </div>
+
+
+            </footer>
+
+
+
+
+        <!-- makeup-->
+        <header class = "makeup" id = "makeup">
+            <div class = "container">
+                <h1 class = "g-title"> Special offer for our beauty sets</h1>
+                <p class = "text-light">Our products are scientifically tested and safety to use for your skin.</p>
+                <div class = "makeup_video">
+                    <iframe height="400" width="800"  
+                    src="https://www.youtube.com/embed/bEKJ2xSmpAw" frameborder="0" allowfullscreen></iframe>
+                </div><br>
+                <div class = "makeup_items">
+                    <!-- single  makeup item-->
+                    <div class = "makeups">
+                        <div class = "makeupContent">
+                            <div class = "makeup-image">
+                                <img  id = "foundation" src = "foundation1.avif" alt= "foundation" width="200px">
+                            </div>
+                            <div class = "makeup-btns">
+                                <button type = "button" class = "btn-cart"> Add to cart
+                                  <span><i class = "fa fa-plus"></i></span>
+                                </button>
+
+                                <button type = "button" class = "btn-buy"> Buy now
+                                    <span><i class = "fa fa-shopping-cart"></i></span>
+                                </button>
+                            </div>    
+                        </div>
+
+
+                        <div class = "makeup-info">
+                            <div class = "makeup-info-top">
+                                <h2 class = "sm-title">Mac Studio face and body foundation</h2>
+                                <div class = "rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <a href = "#foundation" class = "foundation1" >Full coverage, natural finish, hydrating </a>
+                                <p class ="foundation_price"> £36.00</p>
+                                <p class = "foundation_price"> £27.00</p>
+
+                            </div>
+
+                            <div class = "off-info">
+                              <h2 class = "sm-title">25% off</h2>
+                            </div>  
+                        </div>
+
+                    </div>   
+                    <!--end of single makeup item-->
+
+
+                    <!--second single makeup item-->
+                    <div class = "makeups">
+                        <div class = "makeupContent">
+                                <div class = "makeup-image" id = "lip">
+                                    <img  id = "lipstick" src = "lipcolor.avif" alt=" foundation" width="200px">
+                                </div>
+                                <div class = "makeup-btns">
+                                    <button type = "button" class = "btn-cart"> Add to cart
+                                      <span><i class = "fa fa-plus"></i></span>
+                                    </button>
+
+                                    <button type = "button" class = "btn-buy"> Buy now
+                                        <span><i class = "fa fa-shopping-cart"></i></span>
+                                    </button>
+                                </div>    
+                        </div>
+
+
+                        <div class = "makeup-info">
+                                    <div class = "makeup-info-top">
+                                        <h2 class = "sm-title">Powderkiss Lipcolor</h2>
+                                        <div class = "rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <a href = "#foundation" class = "foundation1" >Moisture and cushiony finish effect</a>
+                                        <p class ="foundation_price"> £22.00</p>
+                                        <p class = "foundation_price"> £18.70</p>
+                                    </div>
+
+                                    <div class = "off-info">
+                                        <h2 class = "sm-title">15% off</h2>
+                                    </div>  
+                        </div>
+                    </div>    
+                    <!--end of second single makeup item-->
+
+                    <!--third single makeup item-->
+                    <div class = "makeups">
+                            <div class = "makeupContent">
+                                <div class = "makeup-image">
+                                    <img  id = "powder" src = "powder.webp" alt=" foundation" width="200px">
+                                </div>
+                                <div class = "makeup-btns">
+                                    <button type = "button" class = "btn-cart"> Add to cart
+                                        <span><i class = "fa fa-plus"></i></span>
+                                    </button>
+
+                                    <button type = "button" class = "btn-buy"> Buy now
+                                        <span><i class = "fa fa-shopping-cart"></i></span>
+                                    </button>
+                                </div>    
+                            </div>
+
+
+                            <div class = "makeup-info">
+                                <div class = "makeup-info-top">
+                                    <h2 class = "sm-title">Laura Mercier Setting Powder </h2>
+                                    <div class = "rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <a href = "#foundation" class = "foundation1" >Grace the skin with a naturally radiant finish</a>
+                                    <p class ="foundation_price"> £27.00</p>
+                                    <p class = "foundation_price"> £24.30</p>
+
+                                </div>
+
+                                <div class = "off-info">
+                                    <h2 class = "sm-title">10% off</h2>
+                                </div>  
+                            </div>
+                    </div>
+                    <!--fourth single makeup item-->
+                    <div class = "makeups">
+                        <div class = "makeupContent">
+                            <div class = "makeup-image">
+                                <img  id = "bronzer" src = "bronzer.webp" alt=" foundation">
+                            </div>
+                            <div class = "makeup-btns">
+                                <button type = "button" class = "btn-cart"> Add to cart
+                                    <span><i class = "fa fa-plus"></i></span>
+                                </button>
+
+                                <button type = "button" class = "btn-buy"> Buy now
+                                    <span><i class = "fa fa-shopping-cart"></i></span>
+                                </button>
+                            </div>    
+                        </div>
+
+
+                        <div class = "makeup-info">
+                            <div class = "makeup-info-top">
+                                <h2 class = "sm-title">NARS Bronzing powder </h2>
+                                <div class = "rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <a href = "#foundation" class = "foundation1" > Cult-classic Laguna bronzer</a>
+                                <p class ="foundation_price"> £31.00</p>
+                                <p class = "foundation_price"> £24.80</p>
+
+                            </div>
+
+                            <div class = "off-info">
+                                <h2 class = "sm-title">20% off</h2>
+                            </div>  
+                        </div>
+
+                    </div>    
+                    <!--end of fourth singel item-->  
+                </div>
+            </div>
+        </header>
+        <footer class ="footer">
+                <div class= "footer-content">
+                    <div class="footer-section about">
+                    <h2 class ="logo-text">Beauty by Victoria</h2><br>
+
+                        <div class="contact">
+                            <span><i class ="fas fa-user"></i>  &nbsp; Victoria Winter</span>
+                            <span><i class ="fas fa-phone"></i>  &nbsp; +447405181823</span>
+                            <span><i class ="fas fa-envelope"></i> &nbsp; info@beautybyvictoria.com</span><br>
+                        </div>
+                        <div class ="socials">
+                            <a class ="flink" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class ="flink" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class ="flink" href="#"><i class ="fab fa-twitter"></i></a>
+                            <a class ="flink" href="#"><i class ="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section links">
+                        <h2>Quick Links</h2>
+                        <br>
+                        <ul>
+                            <a class ="flink" href="#"><li>Events</li></a>
+                            <a class ="flink" href="#"><li>Team</li></a>
+                            <a class ="flink" href="#"><li>Mentores</li></a>
+                            <a class ="flink" href="#"><li>Terms and conditions</li></a>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class= "footer-bottom">
+                    &copy; @DateTime.Now.Year Designed by Victoria Winter
+                </div>
+
+        </footer>
+
+        <!--makeup section done-->
+
+        <!--skincare-->
+        <div class = "skincare" id = "skincare">
+            <header class = "container">
+                <h1 class = "g-title"> Special gift sets for your skincare treat</h1>
+                <p class = "text-light">Our products are scientifically tested and safety to use for your skin.</p>
+                <div class = "skincare_video">
+                    <iframe height="400" width="800"  
+                    src="https://www.youtube.com/embed/mPbmA42IgZA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class = "skincare_items">
+                    <!-- first skincare set-->
+                    <div class = "skincares">
+                        <div class = "skincareContent">
+
+                            <div class = "skincare-image">
+                                <img id = "sk1" src = "sk1.avif" alt="skincare1" width="200px">
+                            </div>
+                            <div class = "skincare-btns">
+                                <button type = "button" class = "btn-cart"> Add to cart
+                                <span><i class = "fa fa-plus"></i></span>
+                                </button>
+
+                                <button type = "button" class = "btn-buy"> Buy now
+                                    <span><i class = "fa fa-shopping-cart"></i></span>
+                                </button>
+                            </div>    
+                        </div>
+
+
+                        <div class = "skincare-info">
+                            <div class = "skincare-info-top">
+                                <h2 class = "sm-title">Hydrating Skincare Gift Set</h2>
+                                <div class = "rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <a href = "#ski1" class = "ski1" >hydration heroes in one refreshing set </a>
+                                <p class ="skincare_price"> £40.00</p>
+                                <p class = "skincare_price"> £20.00</p>
+
+                            </div>
+
+                            <div class = "off-info">
+                              <h2 class = "sm-title">50% off</h2>
+                            </div>  
+                        </div>
+                    </div>    
+                    <!--first skincare section done -->
+
+                    <!--second skincare set-->
+                    <div class = "skincares">
+                        <div class = "skincareContent">
+                            <div class = "skincare-image">
+                                <img id = "sk2" src = "skii.webp" alt="skincare1" width="200px">
+                            </div>
+                            <div class = "skincare-btns">
+                                <button type = "button" class = "btn-cart"> Add to cart
+                                <span><i class = "fa fa-plus"></i></span>
+                                </button>
+
+                                <button type = "button" class = "btn-buy"> Buy now
+                                    <span><i class = "fa fa-shopping-cart"></i></span>
+                                </button>
+                            </div>    
+                        </div>
+
+                        <div class = "skincare-info">
+                            <div class = "skincare-info-top">
+                                <h2 class = "sm-title">SK-II First Kit</h2>
+                                <div class = "rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <a href = "#ski1" class = "ski1" >A powerful treatment to soften texture </a>
+                                <p class ="skincare_price"> £130.00</p>
+                                <p class = "skincare_price"> £104.00</p>
+
+                            </div>
+
+                            <div class = "off-info">
+                               <h2 class = "sm-title">20% off</h2>
+                            </div>  
+                        </div>
+                    </div>  
+                    <!--second skincare section done -->
+
+                    <!--third skincare set-->
+
+                    <div class = "skincares">
+                        <div class = "skincareContent">
+                            <div class = "skincare-image" >
+                                <img id = "sk3" src = "est1.webp" alt="skincare1" width="200px">
+                            </div>
+                            <div class = "skincare-btns">
+                                <button type = "button" class = "btn-cart"> Add to cart
+                                <span><i class = "fa fa-plus"></i></span>
+                                </button>
+
+                                <button type = "button" class = "btn-buy"> Buy now
+                                    <span><i class = "fa fa-shopping-cart"></i></span>
+                                </button>
+                            </div>    
+                        </div>
+
+                        <div class = "skincare-info">
+                            <div class = "skincare-info-top">
+                                <h2 class = "sm-title">Estee Lauder Skincare  Set </h2>
+                                <div class = "rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <a href = "#ski1" class = "ski1" >A more lifted and youthful look </a>
+                                <p class ="skincare_price"> £90.00</p>
+                                <p class = "skincare_price"> £45.00</p>
+
+                            </div>
+
+                            <div class = "off-info">
+                               <h2 class = "sm-title">50% off</h2>
+                            </div>  
+                        </div>
+                    </div>
+                    <!--third skincare section-->
+                </div>      
+            </header>
+
+
+
+            <footer class ="footer">
+                <div class= "footer-content">
+                    <div class="footer-section about">
+                    <h2 class ="logo-text">Beauty by Victoria</h2><br>
+
+                        <div class="contact">
+                            <span><i class ="fas fa-user"></i>  &nbsp; Victoria Winter</span>
+                            <span><i class ="fas fa-phone"></i>  &nbsp; +447405181823</span>
+                            <span><i class ="fas fa-envelope"></i> &nbsp; info@beautybyvictoria.com</span><br>
+                        </div>
+                        <div class ="socials">
+                            <a class ="flink" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class ="flink" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class ="flink" href="#"><i class ="fab fa-twitter"></i></a>
+                            <a class ="flink" href="#"><i class ="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section links">
+                        <h2>Quick Links</h2>
+                        <br>
+                        <ul>
+                            <a class ="flink" href="#"><li>Events</li></a>
+                            <a class ="flink" href="#"><li>Team</li></a>
+                            <a class ="flink" href="#"><li>Mentores</li></a>
+                            <a class ="flink" href="#"><li>Terms and conditions</li></a>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class= "footer-bottom">
+                &copy; @DateTime.Now.Year Designed by Victoria Winter
+                </div>
+            </footer>
+        </div>
+
+        <!--services-->
+        <header class = "services" id ="services">
+            <h1>Our Services</h1>
+            <div class ="wrapper">
+                <div class ="services_card">
+                    <div class = "services_image">
+                    <img src = "events.jfif"  id = "services1">
+                    </div>
+                    <h2>Events</h2>
+                    <p>SEMICON Korea 2023</p>
+                    <p>Trade show for the latest materials</p>
+                    <div class = "services_btn"><button>Read More</button></div>
+                </div>
+                <div class ="services_card">
+                    <div class = "services_image">
+                        <img src = "concept.jfif"  id = "services1">
+                    </div>
+                    <h2>Beauty Concepts</h2>
+                    <p>Skin Loving Rituals</p>
+                    <p> A full sample kit include 8 stability formulations</p>
+                    <div class = "services_btn"><button>Read More</button></div>
+                </div>
+                <div class ="services_card">
+                    <div class = "services_image">
+                        <img src = "makeup.jfif"  id = "services1">
+                    </div>
+                    <h2>Makeup Services</h2>
+                    <p>Skinspiration</p>
+                    <p>Bespoke for your glowing foundation match </p>
+                    <div class = "services_btn"><button>Read More</button></div>
+                </div>
+                <div class ="services_card">
+                    <div class = "services_image">
+                        <img src = "training.jfif"  id = "services1">
+                    </div>
+                    <h2>Training</h2>
+                    <p>Facial Beauty Course</p>
+                    <p>Learning about facial and client consulation techniques </p>
+                    <div class = "services_btn"><button>Read More</button></div>
+                </div>
+
+
+
+            </div>
+        </header>
+
+        <footer class ="footer">
+            <div class= "footer-content">
+                <div class="footer-section about">
+                <h2 class ="logo-text">Beauty by Victoria</h2><br>
+
+                    <div class="contact">
+                        <span><i class ="fas fa-user"></i>  &nbsp; Victoria Winter</span>
+                        <span><i class ="fas fa-phone"></i>  &nbsp; +447405181823</span>
+                        <span><i class ="fas fa-envelope"></i> &nbsp; info@beautybyvictoria.com</span><br>
+                    </div>
+                    <div class ="socials">
+                        <a class ="flink" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class ="flink" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class ="flink" href="#"><i class ="fab fa-twitter"></i></a>
+                        <a class ="flink" href="#"><i class ="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                        <a class ="flink" href="#"><li>Events</li></a>
+                        <a class ="flink" href="#"><li>Team</li></a>
+                        <a class ="flink" href="#"><li>Mentores</li></a>
+                        <a class ="flink" href="#"><li>Terms and conditions</li></a>
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class= "footer-bottom">
+            &copy;@DateTime.Now.Year Designed by Victoria Winter
+            </div>
+
+        </footer>
+        <!--register page-->
+        <header class ="register" id="register">
+            <div class = "content1">
+                <div class="image1">
+                </div>
+                <div class="text1">
+                    Register for the beauty services!
+                </div>
+
+            </div>
+
+        <h2>@ViewData["confirmation"]</h2>
+        <form id="form" method="post">
+                <div class = "social_media">
+                <div class="title"> Registration</div> 
+                </div>
+                <!-- Name input -->
+                <div>
+                    <i class = "fas fa-user"></i>
+                    <input asp-for="Name" id="name" placeholder="Victoria Winter" pattern="[a-zA-Z\s]{2,60}"/>
+                    <i class ="fas fa-exclamation-circle failure-icon" id = "name-err"></i> 
+                    <i class ="far fa-check-circle success-icon "></i>
+                    <div class ="error"></div>
+                </div>
+                <!-- email input -->
+                <div>
+                    <label for="email">Email</label>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input asp-for="Email" type="email" id="email" placeholder="abc@gmail.com" pattern="(\w+@@[a-zA-Z_]+?.[a-zA-Z]{2,6})"/>
+                    <i class ="fas fa-exclamation-circle failure-icon"></i> 
+                    <i class ="far fa-check-circle success-icon "></i>
+                    <div class ="error"></div>
+                </div>
+                <!-- password -->
+                <div>
+                    <label for="password">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input asp-for="Password" type="password" id="password" placeholder="password here please"/> 
+                    <i class ="fas fa-exclamation-circle failure-icon"></i> 
+                    <i class ="far fa-check-circle success-icon "></i>
+                    <div class ="error"></div>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        
+        </header>
+        <!--footer-->
+        <footer class ="footer">
+            <div class= "footer-content">
+                <div class="footer-section about">
+                  <h2 class ="logo-text">Beauty by Victoria</h2><br>
+
+                    <div class="contact">
+                        <span><i class ="fas fa-user"></i>  &nbsp; Victoria Winter</span>
+                        <span><i class ="fas fa-phone"></i>  &nbsp; +447405181823</span>
+                        <span><i class ="fas fa-envelope"></i> &nbsp; info@beautybyvictoria.com</span><br>
+                    </div>
+                    <div class ="socials">
+                        <a class ="flink" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class ="flink" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class ="flink" href="#"><i class ="fab fa-twitter"></i></a>
+                        <a class ="flink" href="#"><i class ="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                        <a class ="flink" href="#"><li>Events</li></a>
+                        <a class ="flink" href="#"><li>Team</li></a>
+                        <a class ="flink" href="#"><li>Mentores</li></a>
+                        <a class ="flink" href="#"><li>Terms and conditions</li></a>
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class= "footer-bottom">
+                &copy; @DateTime.Now.Year Designed by Victoria Winter
+            </div>
+
+        </footer>
+
+        <script src ="app.js"></script>
+        <script src="https://kit.fontawesome.com/6bc70ac788.js" crossorigin="anonymous"></script>
+    </body>

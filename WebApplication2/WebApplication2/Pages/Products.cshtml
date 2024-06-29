@@ -1,0 +1,23 @@
+﻿@page
+@model WebApplication2.Pages.ProductsModel
+@{
+    
+}
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<h1>Products Information</h1>
+<div class="flex-container">
+    @foreach (var product in Model.Products)
+    {
+        <div class="productInformation">
+            <h3 placeholder="Product ID">@product.Id<h3>
+            <p>@product.Name</p>
+            <img style="width:200px;" src="@product.ProductImage" alt="Image of @product.Name">
+            <p class="description">@product.Description</p>
+            <p>@product.Price</p>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,36 @@
+﻿@page
+@model basketModel
+@{
+}
+@{
+    ViewBag.Title = "Basket";
+}
+
+<h2>Your Basket</h2>
+<p>Items in your basket: <span id="basketCount">0</span></p>
+
+<!-- Product ID search box -->
+<form id="searchForm">
+    <label for="productId">Product ID:</label>
+    <input type="text" id="productId" name="productId" />
+    <button type="button" id="searchButton">Search</button>
+</form>
+
+<script>
+    const basketCount = document.getElementById('basketCount');
+    let itemCount = 0;
+
+    function addItemToBasket() {
+        itemCount++;
+        basketCount.textContent = itemCount;
+    }
+
+    const searchForm = document.getElementById('searchForm');
+    const searchButton = document.getElementById('searchButton');
+    searchButton.addEventListener('click', () => {
+        const productId = document.getElementById('productId').value;
+        // TODO: Implement your product search logic here using AJAX or other methods
+        // For this example, let's just log the searched product ID
+        console.log('Searched Product ID:', productId);
+    });
+</script>

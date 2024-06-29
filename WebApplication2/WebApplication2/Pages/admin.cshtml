@@ -1,0 +1,18 @@
+﻿@page
+@model WebApplication2.Pages.adminModel
+@{
+}
+
+<h1>Product Information</h1>
+
+<form method="post" asp-page="Form">
+    <input type="text" asp-for="@Model.Products.Id"  placeholder=" product Id"/>
+    <input type="text" asp-for="@Model.Products.Name" placeholder=" product name" />
+    <input type="text" asp-for="@Model.Products.Description"  placeholder=" product description" />
+    <input type="text" asp-for="@Model.Products.Price" placeholder=" product price" />
+    <input type="text" asp-for="@Model.Products.ProductImage" placeholder="product image source"/>
+    <input type="submit" value="Save" />
+</form>
+
+<a asp-page="/Index" asp-route-id="@Model.Products.Id" asp-page-handler="Delete">Delete</a>>
+

@@ -1,0 +1,117 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\Report.docx",
+      "PackagePath": "staticwebassets\\Report.docx"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\Web.config",
+      "PackagePath": "staticwebassets\\Web.config"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\bronzer.webp",
+      "PackagePath": "staticwebassets\\bronzer.webp"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\concept.jfif",
+      "PackagePath": "staticwebassets\\concept.jfif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\est1.webp",
+      "PackagePath": "staticwebassets\\est1.webp"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\est3.jpg",
+      "PackagePath": "staticwebassets\\est3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\events.jfif",
+      "PackagePath": "staticwebassets\\events.jfif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\foundation1.avif",
+      "PackagePath": "staticwebassets\\foundation1.avif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\lipcolor.avif",
+      "PackagePath": "staticwebassets\\lipcolor.avif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\logo2.png",
+      "PackagePath": "staticwebassets\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\makeup.jfif",
+      "PackagePath": "staticwebassets\\makeup.jfif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\mood board.png",
+      "PackagePath": "staticwebassets\\mood board.png"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\powder.webp",
+      "PackagePath": "staticwebassets\\powder.webp"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\serum.jpg",
+      "PackagePath": "staticwebassets\\serum.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\service.jfif",
+      "PackagePath": "staticwebassets\\service.jfif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\service1.jpg",
+      "PackagePath": "staticwebassets\\service1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\sk1.avif",
+      "PackagePath": "staticwebassets\\sk1.avif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\skii.webp",
+      "PackagePath": "staticwebassets\\skii.webp"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\studio_face.avif",
+      "PackagePath": "staticwebassets\\studio_face.avif"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\testing requirment.png",
+      "PackagePath": "staticwebassets\\testing requirment.png"
+    },
+    {
+      "Id": "C:\\Users\\nyein\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\training.jfif",
+      "PackagePath": "staticwebassets\\training.jfif"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplication2.props",
+      "PackagePath": "build\\WebApplication2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication2.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplication2.props",
+      "PackagePath": "buildTransitive\\WebApplication2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
